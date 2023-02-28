@@ -22,7 +22,8 @@ body {
 }
 /* presentation */
 .presentation--container {
-  /* outline: 1px dotted black; */
+  outline: 1px dotted black;
+
   display: flex;
 
   width: 95%;
@@ -33,7 +34,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
 }
 .presentation--left {
-  /* outline: 1px dotted black; */
+  outline: 1px dotted black;
   width: 20%;
 
   display: grid;
@@ -50,7 +51,7 @@ body {
   place-items: center;
 }
 .presentation--right {
-  /* outline: 1px dotted black; */
+  outline: 1px dotted black;
   width: 80%;
 
   display: flex;
@@ -117,5 +118,5 @@ body {
 .main {
   width: 80%;
 
-  /* outline: 1px dotted black;  */
+  /* outline: 1px dotted black; */
 }
