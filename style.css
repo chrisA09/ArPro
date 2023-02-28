@@ -1,19 +1,28 @@
+/* el asterizco significa que aplica a todo */
+/* son reglas generales para comenzar un proyecto */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* centrado de contenido simple con grid */
 body {
   display: grid;
   place-items: center;
 }
+/* tamaño total de la pagina */
+
+/* Arreglos por hacer: 
+.agrupar el contenido a un 75% de 1440px
+.verificar que el tamñano de pantalla sea adecuado en la notebook
+.Con grid, la solapa de educacion debe ir debajo de presentacion
+*/
+
+
 .wrapper {
   width: 1440px;
 }
-/* .header--container {
-  width: 1440px;
-} */
 /* nav */
 .nav--container {
   outline: 1px dotted black;
@@ -32,6 +41,7 @@ body {
   background-color: #edede9;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
 }
+/* izquierda */
 .presentation--left {
   /* outline: 1px dotted black; */
   width: 20%;
@@ -49,6 +59,7 @@ body {
   display: grid;
   place-items: center;
 }
+/* derecha */
 .presentation--right {
   /* outline: 1px dotted black; */
   width: 80%;
@@ -70,14 +81,16 @@ body {
   width: 50%;
   border-top: 1px solid black;
 }
+/* links--contacto */
 .presentation--calltoAction {
   display: flex;
-  flex-direction: row;
+ 
 
   gap: 1em;
 
   margin-top: 2em;
 }
+/* agrupo texto con icono*/
 .presentation--email {
   display: flex;
   align-items: center;
@@ -121,6 +134,7 @@ flex-direction: column;
 /* justify-content: start; */
 
 }
+/* educacion */
 .contenido--educacion{
 padding: 2em;
 margin-top: 40px;
@@ -134,6 +148,7 @@ gap: 2em;
     align-items: center;
     gap: 5px;
 }
+/* objetivos */
 .contenido--objetivos{
 padding: 2em;
 display: flex;
