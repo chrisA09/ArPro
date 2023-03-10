@@ -1,210 +1,121 @@
-/* el asterizco significa que aplica a todo */
-/* son reglas generales para comenzar un proyecto */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* Arreglos por hacer: 
-.agrupar el contenido a un 75% de 1440px
--verificar que el tamñano de pantalla sea adecuado en la notebook
-
-.arreglar disposicion de barra lateral(tiene que llegar hasta arriba)
-.Traer para arriba presentacion
-.buscar como dar estilos a los iconos
-.buscar estilos de texto
-.anchors de navegacion
-*/
-.ancho--total{
-  width: 1440px;
-
-  display: grid;
-  place-items: center;
+body {
+  background-color: #f8f9fa;
 }
-
-/* nav */
+/* .ancho--total {
+  display: grid;
+} */
 .nav--container {
-  /* outline: 1px dotted black; */
-  height: 2em;
-}
-/* presentation */
-.presentation--container {
-  /* outline: 1px dotted black; */
-
   display: flex;
-
-  width: 95%;
-  height: 15em;
-
-  border-radius: 5px;
-  background-color: #edede9;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
-}
-/* izquierda */
-.presentation--left {
-  /* outline: 1px dotted black; */
-  width: 20%;
-
-  display: grid;
-  place-items: center;
-}
-.presentation--image {
-  outline: 1px dotted black;
-
-  border-radius: 50%;
-  height: 10em;
-  width: 10em;
-
-  display: grid;
-  place-items: center;
-}
-/* derecha */
-.presentation--right {
-  /* outline: 1px dotted black; */
-  width: 80%;
-
-  display: flex;
-  flex-direction: column;
-}
-.presentation--name {
-  display: flex;
-
-  padding-left: 2em;
-  padding-top: 2em;
-}
-.presentation--profesion {
-  display: flex;
-  align-items: center;
-
-  gap: 1em;
-  width: 50%;
-  border-top: 1px solid black;
-}
-/* links--contacto */
-.presentation--calltoAction {
-  display: flex;
-
-  gap: 1em;
-
-  margin-top: 2em;
-}
-/* agrupo texto con icono*/
-.presentation--email {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-.presentation--phone {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-.presentation--linkedin {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-.presentation--portfolio {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-/* contenido */
-.contenido--container {
-  display: flex;
-  /* outline: 1px dotted black; */
-
-  height: 100vh;
-  width: 100%;
-}
-/* izq */
-.contenido--izq {
-  width: 20%;
-
-  /* outline: black solid 1px; */
-
-  background-color: #edede9;
-
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  /* justify-content: start; */
 }
-/* educacion */
-.contenido--educacion {
-  padding: 2em;
-  margin-top: 40px;
+/* presentacion */
+.presentacion--container {
+  background-color: #e9ecef;
 
   display: flex;
   flex-direction: column;
-  gap: 2em;
-}
-.educacion--icono {
-  display: flex;
   align-items: center;
-  gap: 5px;
-}
-/* objetivos */
-.contenido--objetivos {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-.objetivos--icono {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-/* extras */
-.contenido--extras {
-  display: grid;
-  place-items: center;
-
-  background-color: #e0e0de;
-}
-.contenido--extras > * {
-  height: 50px;
+  gap: 1em;
 }
 /* der */
-.contenido--der {
-  width: 80%;
+.presentacion--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  width: 100%;
+}
+.presentacion--inicial {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.presentacion--nombre {
+  border-bottom: 0.5px solid #6c757d;
+}
+.presentacion--contacto {
+  /* pueden ser clickeables sin texto el pdf si tiene que tener texto */
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+/* lateral */
+.lateral--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sobreMi--container {
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.sobreMi--contenido {
+  display: flex;
+  flex-direction: column;
+}
+.parrafo {
+  padding: 1em;
+  color: #01161e;
+  text-align: center;
+  font-size: 1em;
+}
+.contenido--extras {
+  background-color: #dee2e6;
+  width: 90%;
+  height: 1.5em;
 
+  display: flex;
+  justify-content: center;
+}
+.extras--iconos {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+/* tecnologias */
+.tecnologias {
+  background-color: #e9ecef;
+  height: 6em;
+}
+/* principal */
+.principal--container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
-  /* outline: 1px solid black; */
+  height: 150%;
 }
-/* aptitudes */
-.contenido--aptitudesUno {
-  /* outline: 1px solid black; */
+.principal--contenido {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-
-  padding: 2em;
+  align-items: center;
 }
-.aptitudesUno--title {
+.icono--subtitulo {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 1em;
 
-  border-bottom: solid #e0e0de 1px;
-  /* outline: 1px solid black; */
+  font-size: 1rem;
 }
-.aptitudesUno--subtitulo {
+/* tecnologias */
+.tecnologias {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 5px;
-}
-.contenido--techs {
-  /* outline: 1px solid black; */
-  height: 10em;
 
-  background-color: #edede9;
+  color: #6c757d;
 }
-.contenido--aptitudesDos {
-  outline: 1px solid black;
+/* general */
+.icono--titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+/* responsive */

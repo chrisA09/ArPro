@@ -1,121 +1,109 @@
+:root {
+  --clr-fondo: #d9d9d9;
+  --clr-celeste: #ceebf1;
+  --clr-azul: #1b263b;
+
+  --ff-principal: "Ubuntu", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-700: 2rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3rem;
+}
+/* reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
 }
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
 body {
-  background-color: #f8f9fa;
+  height: 100%;
 }
-/* .ancho--total {
-  display: grid;
-} */
-.nav--container {
-  display: flex;
-  justify-content: space-between;
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
-/* presentacion */
-.presentacion--container {
-  background-color: #e9ecef;
 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* utility  */
+.center {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.bg-main-100 {
+  background-color: var(--clr-fondo);
+}
+.bg-side-400 {
+  background-color: var(--clr-azul);
+}
+.bg-secondary-400 {
+  background-color: var(--clr-celeste);
+}
+/* ------------------------------ */
+.presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
 }
-/* der */
-.presentacion--info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5em;
-  width: 100%;
-}
-.presentacion--inicial {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.presentacion--nombre {
-  border-bottom: 0.5px solid #6c757d;
-}
-.presentacion--contacto {
-  /* pueden ser clickeables sin texto el pdf si tiene que tener texto */
-  display: flex;
-  align-items: center;
-  gap: 1.5em;
-}
-/* lateral */
-.lateral--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sobreMi--container {
-  background-color: #e9ecef;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.sobreMi--contenido {
-  display: flex;
-  flex-direction: column;
-}
-.parrafo {
-  padding: 1em;
-  color: #01161e;
-  text-align: center;
-  font-size: 1em;
-}
-.contenido--extras {
-  background-color: #dee2e6;
-  width: 90%;
-  height: 1.5em;
-
-  display: flex;
-  justify-content: center;
-}
-.extras--iconos {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-/* tecnologias */
-.tecnologias {
-  background-color: #e9ecef;
-  height: 6em;
-}
-/* principal */
-.principal--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  height: 150%;
-}
-.principal--contenido {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.icono--subtitulo {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-
-  font-size: 1rem;
-}
-/* tecnologias */
-.tecnologias {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  color: #6c757d;
-}
-/* general */
-.icono--titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* responsive */
