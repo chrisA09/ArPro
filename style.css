@@ -227,6 +227,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 .content__techs {
   display: flex;
   flex-wrap: wrap;
