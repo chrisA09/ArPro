@@ -195,7 +195,6 @@ body {
 .presentation__profession {
   margin-left: 1em;
 }
-
 /* ------------------------------ */
 /* contact */
 .contact {
@@ -246,8 +245,9 @@ body {
 @media (min-width: 40em) {
   .presentation__left {
     /* falta arreglar el tamaño del fondo */
+    height: 100%;
     width: 20%;
-
+    
     background-color: var(--fa-secondary-color);
     color: white;
   }
@@ -256,6 +256,15 @@ body {
   .presentation {
     flex-direction: row;
     padding: 0;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .presentation__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
   }
   .contact__container {
     flex-direction: row;
