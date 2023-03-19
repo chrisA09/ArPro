@@ -108,6 +108,14 @@ select {
   padding: 1em;
   margin: 2em 0;
 }
+.space-xl{
+  padding: 1.5em 0;
+  margin: 3em 0;
+}
+.spacing-test{
+  letter-spacing: .2em;
+  /* word-spacing: .5em; */
+}
 .center {
   display: flex;
   align-items: center;
@@ -168,6 +176,9 @@ select {
 }
 .fs-xxl {
   font-size: var(--fs-900);
+}
+.transform-txt{
+  text-transform: uppercase;
 }
 .bg-main-100 {
   background-color: var(--clr-fondo);
@@ -266,8 +277,16 @@ body {
 
     width: 80%;
   }
+  .presentation__name{
+    font-size: var(--fs-900);
+  }
   .contact__container {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .contact__container > a{
+    text-decoration: none;
   }
   .content {
     display: flex;
