@@ -251,6 +251,13 @@ body {
   height: 8em;
   padding: 1em;
 }
+.exp,
+.skills,
+.lenguages {
+  border-top: 1px solid var(--fa-secondary-color);
+  width: 80%;
+  margin: 1em auto;
+}
 /* ------------------------------ */
 /* responsive */
 @media (min-width: 780px) {
