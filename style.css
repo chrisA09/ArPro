@@ -196,6 +196,16 @@ select {
 body {
   font-family: var(--ff-principal);
 }
+a:link {
+  color: var(--clr-azul);
+  outline: none;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--clr-azul);
+  outline: none;
+  text-decoration: none;
+}
 /* presentation */
 .presentation {
   display: flex;
@@ -222,6 +232,7 @@ body {
 
   padding: 1em 0;
 }
+
 /* ------------------------------ */
 /* content */
 .content__left {
