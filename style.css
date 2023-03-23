@@ -272,6 +272,26 @@ a:visited {
   width: 80%;
   margin: 1em auto;
 }
+/* test */
+.slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  animation: animate 25s alternate linear infinite;
+}
+.slider:hover .slide {
+  animation-play-state: paused;
+}
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1100px, 0, 0);
+  }
+}
 /* ------------------------------ */
 /* responsive */
 @media (min-width: 780px) {
