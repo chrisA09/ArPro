@@ -274,19 +274,20 @@ a:visited {
 }
 /* test */
 .slider {
-  width: 100%;
+  width: 300%;
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
 }
 .slide {
-  animation: animate 25s alternate linear infinite;
+  animation: animate 25s normal linear infinite;
 }
 .slider:hover .slide {
   animation-play-state: paused;
 }
 @keyframes animate {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(1100px, 0, 0);
   }
   100% {
     transform: translate3d(-1100px, 0, 0);
