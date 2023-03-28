@@ -287,10 +287,10 @@ a:visited {
 }
 @keyframes animate {
   0% {
-    transform: translate3d(1100px, 0, 0);
+    transform: translate3d(600px, 0, 0);
   }
   100% {
-    transform: translate3d(-1100px, 0, 0);
+    transform: translate3d(-600px, 0, 0);
   }
 }
 /* ------------------------------ */
@@ -357,5 +357,13 @@ a:visited {
     width: 80%;
   }
   /* ------------------------------ */
+  @keyframes animate {
+    0% {
+      transform: translate3d(1100px, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1100px, 0, 0);
+    }
+  }
 }
 /* ------------------------------ */
